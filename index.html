@@ -143,11 +143,12 @@
       </ul>
     </div>
             <script>
+document.getElementsByClassName("v-slider-frame")[0].style.height = document.getElementsByClassName("v-slide")[0].offsetHeight;
 var vsOpts = {
   $slides: $('.v-slide'),
   $list: $('.v-slides'),
   duration: 20,
-  lineHeight: 25
+  lineHeight: document.getElementsByClassName("v-slide")[0].offsetHeight
 }
 
 var vSlide = new TimelineMax({
