@@ -132,17 +132,17 @@
           data-holder-rendered="true">
 
         <div class="mb-3 fs-1 mb-4 mt-4" style="line-height:0%;">
-            <div style="color:rgba(255,255,255,0.5)" aria-hidden="true">Yì-Tíng Tú (凃懿庭)</div>
-            <div>Yi-Ting Tu (凃懿庭)</div>
+            <div style="color:rgba(255,255,255,0.5)" aria-hidden="true" id="name1">Yì-Tíng Tú (凃懿庭)</div>
+            <div id="name">Yi-Ting Tu (凃懿庭)</div>
         </div>
-            <div class="lead">PhD student at UMD Physics</div>
+            <div class="lead" id="phd">PhD student at UMD Physics</div>
           <p class="lead">
 <div class="v-slider-frame" style="color:rgba(255,255,255,0.6)">
       <ul class="v-slides">
-        <li class="v-slide">Welcome to my personal page!</li>
-        <li class="v-slide">歡迎來到我的個人網頁！</li>
-        <li class="v-slide" aria-hidden="true">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
-        <li class="v-slide" aria-hidden="true">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
+        <li class="v-slide" style="cursor:default;" onclick="langEn()">Welcome to my personal page!</li>
+        <li class="v-slide" style="cursor:default;" onclick="langZh()">歡迎來到我的個人網頁！</li>
+        <li class="v-slide" aria-hidden="true" style="cursor:default;" onclick="langPinyin()">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
+        <li class="v-slide" aria-hidden="true" style="cursor:default;" onclick="langPOJ()">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
       </ul>
     </div>
             <script>
@@ -167,6 +167,26 @@ vsOpts.$slides.each(function(i) {
 })
 vSlide.play()
 
+                function langEn() {
+                    document.getElementById("name").innerHTML = "Yi-Ting Tu (凃懿庭)";
+                    document.getElementById("name1").innerHTML = "Yì-Tíng Tú (凃懿庭)";
+                    document.getElementById("phd").innerHTML = "PhD student at UMD Physics";
+                }
+                function langZh() {
+                    document.getElementById("name").innerHTML = "凃懿庭 (Yi-Ting Tu)";
+                    document.getElementById("name1").innerHTML = "凃懿庭 (Yì-Tíng Tú)";
+                    document.getElementById("phd").innerHTML = "馬里蘭大學物理博士生";
+                }
+                function langPinyin() {
+                    document.getElementById("name").innerHTML = "Tú Yìtíng (凃懿庭)";
+                    document.getElementById("name1").innerHTML = "";
+                    document.getElementById("phd").innerHTML = "Mǎlǐlán dàxué wùlǐ bóshìshēng";
+                }
+                function langPOJ() {
+                    document.getElementById("name").innerHTML = '<span style="font-family: Doulos SIL">Thô͘ Ì-têng</span> (凃懿庭)';
+                    document.getElementById("name1").innerHTML = "";
+                    document.getElementById("phd").innerHTML = '<span style="font-family: Doulos SIL">Má-lí-lân tāi-ha̍k bu̍t-lí phok-sū-seng</span>';
+                }
             </script>
           </p>
           <p class="lead">
