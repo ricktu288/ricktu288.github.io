@@ -128,11 +128,11 @@
         <main class="px-3">
 
             
-        <img class="rounded-circle z-depth-2 mb-3" style="max-width: 30%" src="photo.jpg"
+        <img class="rounded-circle z-depth-2 mb-3" style="max-width: 30%" src="photo.jpg" alt="My photo"
           data-holder-rendered="true">
 
         <div class="mb-3 fs-1 mb-4 mt-4" style="line-height:0%;">
-            <div style="color:rgba(255,255,255,0.5)">Yì-Tíng Tú (凃懿庭)</div>
+            <div style="color:rgba(255,255,255,0.5)" aria-hidden="true">Yì-Tíng Tú (凃懿庭)</div>
             <div>Yi-Ting Tu (凃懿庭)</div>
         </div>
             <div class="lead">PhD student at UMD Physics</div>
@@ -141,8 +141,8 @@
       <ul class="v-slides">
         <li class="v-slide">Welcome to my personal page!</li>
         <li class="v-slide">歡迎來到我的個人網頁！</li>
-        <li class="v-slide">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
-        <li class="v-slide">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
+        <li class="v-slide" aria-hidden="true">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
+        <li class="v-slide" aria-hidden="true">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
       </ul>
     </div>
             <script>
@@ -170,18 +170,21 @@ vSlide.play()
             </script>
           </p>
           <p class="lead">
-            <a href="https://www.facebook.com/rick.tu.7" class="text-decoration-none text-white-50" >
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook">
+
+            <a href="https://www.facebook.com/rick.tu.7" class="text-decoration-none text-white-50">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Facebook" aria-label="Facebook">
   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
 </svg>
 </a>
+
             <a href="https://github.com/ricktu288" class="text-decoration-none text-white-50">
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" title="GitHub" aria-label="GitHub">
   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
 </svg>
 </a>
+
             <a href="https://scholar.google.com/citations?user=Dt8I_IYAAAAJ" class="text-decoration-none text-white-50">
-<svg width="32" height="32" class="bi" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google Scholar"
+<svg width="32" height="32" class="bi" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Google Scholar" aria-label="Google Scholar"
    viewBox="0 0 512 512"
    version="1.1"
    id="svg10"
@@ -240,31 +243,81 @@ vSlide.play()
      d="M 256,411.12 0,202.667 256,0 Z"
      id="path2"
      clip-path="url(#clipPath1850)"
-     style="fill:#ffffff;fill-opacity:0.40000001" />
+     style="fill:#ffffff;fill-opacity:0.45" />
   <path
      fill="#356ac3"
      d="M 256,411.12 512,202.667 256,0 Z"
      id="path4"
      clip-path="url(#clipPath1842)"
-     style="fill:#ffffff;fill-opacity:0.5" />
+     style="fill:#ffffff;fill-opacity:0.55" />
   <path
      fill="#a0c3ff"
      id="circle6"
      clip-path="url(#clipPath3821)"
      d="M 405.33299,362.66699 A 149.33299,149.33299 0 0 1 256,511.99998 149.33299,149.33299 0 0 1 106.66701,362.66699 149.33299,149.33299 0 0 1 256,213.334 149.33299,149.33299 0 0 1 405.33299,362.66699 Z"
-     style="fill:#ffffff;fill-opacity:0.25" />
+     style="fill:#ffffff;fill-opacity:0.35" />
   <path
      fill="#76a7fa"
      d="M121.037 298.667c23.968-50.453 75.392-85.334 134.963-85.334s110.995 34.881 134.963 85.334H121.037z"
      id="path8"
-     style="fill:#ffffff;fill-opacity:0.34999999" />
+     style="fill:#ffffff;fill-opacity:0.4" />
 </svg>
 </a>
+
+            <a href="https://orcid.org/0000-0002-9000-8975" class="text-decoration-none text-white-50">
+<svg width="32" height="32" class="bi" data-bs-toggle="tooltip" data-bs-placement="bottom" title="ORCID" aria-label="ORCID"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 256 256"
+   style="enable-background:new 0 0 256 256;"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs17"><clipPath
+     clipPathUnits="userSpaceOnUse"
+     id="clipPath842"><g
+       id="g850"
+       style="display:none">
+	<path
+   class="st1"
+   d="M 86.3,186.2 H 70.9 V 79.1 h 15.4 v 48.4 z"
+   id="path844" />
+	<path
+   class="st1"
+   d="m 108.9,79.1 h 41.6 c 39.6,0 57,28.3 57,53.6 0,27.5 -21.5,53.6 -56.8,53.6 h -41.8 z m 15.4,93.3 h 24.5 c 34.9,0 42.9,-26.5 42.9,-39.7 C 191.7,111.2 178,93 148,93 h -23.7 z"
+   id="path846" />
+	<path
+   class="st1"
+   d="m 88.7,56.8 c 0,5.5 -4.5,10.1 -10.1,10.1 -5.6,0 -10.1,-4.6 -10.1,-10.1 0,-5.6 4.5,-10.1 10.1,-10.1 5.6,0 10.1,4.6 10.1,10.1 z"
+   id="path848" />
+</g><path
+       id="lpe_path-effect852"
+       class="powerclip"
+       d="M -5,-5 H 261 V 261 H -5 Z M 86.3,186.2 V 127.5 79.1 H 70.9 V 186.2 Z M 108.9,79.1 v 107.2 h 41.8 c 35.3,0 56.8,-26.1 56.8,-53.6 0,-25.3 -17.4,-53.6 -57,-53.6 z m 15.4,93.3 h 24.5 c 34.9,0 42.9,-26.5 42.9,-39.7 C 191.7,111.2 178,93 148,93 H 124.3 Z M 88.7,56.8 c 0,-5.5 -4.5,-10.1 -10.1,-10.1 -5.6,0 -10.1,4.5 -10.1,10.1 0,5.5 4.5,10.1 10.1,10.1 5.6,0 10.1,-4.6 10.1,-10.1 z" /></clipPath></defs>
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#A6CE39;}
+	.st1{fill:#FFFFFF;}
+</style>
+<path
+   class="st0"
+   d="M 256,128 C 256,198.7 198.7,256 128,256 57.3,256 0,198.7 0,128 0,57.3 57.3,0 128,0 198.7,0 256,57.3 256,128 Z"
+   id="path4"
+   clip-path="url(#clipPath842)"
+   style="fill:#ffffff;fill-opacity:0.5" />
+
+</svg>
+</a>
+
             <a href="mailto:ricktu256@yahoo.com.tw" class="text-decoration-none text-white-50">
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email" aria-label="Email">
   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
 </svg>
 </a>
+
           </p>
         </main>
       
