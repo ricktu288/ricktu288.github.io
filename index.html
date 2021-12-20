@@ -153,7 +153,7 @@
 
             
         <img class="rounded-circle z-depth-2 mb-3" style="max-width: 30%" src="photo.jpg" alt="My photo"
-          data-holder-rendered="true">
+          data-holder-rendered="true" data-bs-toggle="tooltip" data-bs-placement="right" title="Me when I graduated from National Tsing Hua University in Taiwan">
 
         <div class="mb-3 fs-1 mb-4 mt-4" style="line-height:0%;">
             <div style="color:rgba(255,255,255,0.5)" aria-hidden="true"><span id="name1">Yì-Tíng Tú (凃懿庭)</span></div>
@@ -163,10 +163,10 @@
           <p class="lead">
 <div class="v-slider-frame" style="color:rgba(255,255,255,0.6)">
       <ul class="v-slides">
-        <li class="v-slide" ondblclick="langEn()">Welcome to my personal page!</li>
-        <li class="v-slide" ondblclick="langZh()">歡迎來到我的個人網頁！</li>
-        <li class="v-slide" aria-hidden="true" ondblclick="langPinyin()">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
-        <li class="v-slide" aria-hidden="true" ondblclick="langPOJ()">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
+          <li class="v-slide"><span ondblclick="langEn()">Welcome to my personal page!</span></li>
+          <li class="v-slide"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Mandarin Chinese" ondblclick="langZh()">歡迎來到我的個人網頁！</span></li>
+          <li class="v-slide" aria-hidden="true"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Mandarin Chinese in pinyin" ondblclick="langPinyin()">Huānyíng lái dào wǒ de gèrén wǎngyè!</span></li>
+          <li class="v-slide" aria-hidden="true"><span data-bs-toggle="tooltip" data-bs-placement="right" title="Taiwanese Hokkien in POJ" ondblclick="langPOJ()">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
       </ul>
     </div>
             <script>
