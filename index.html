@@ -110,6 +110,30 @@
           line-height: 25px;
         }
 
+        .tooltip-main {
+            border: 1px;
+            border-color: white;
+        }
+        .tooltip-inner {
+            text-align: left;
+            background-color: rgb(96,96,96);
+        }
+    .tooltip.bs-tooltip-top .tooltip-arrow::before {
+      border-top-color: rgb(96,96,96);
+    }
+
+    .tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+      border-bottom-color: rgb(96,96,96);
+    }
+
+    .tooltip.bs-tooltip-start .tooltip-arrow::before {
+      border-left-color: rgb(96,96,96);
+    }
+
+    .tooltip.bs-tooltip-end .tooltip-arrow::before {
+      border-right-color: rgb(96,96,96);
+    }
+
       </style>
     </head>
     <body class="d-flex h-100 text-center text-white bg-dark">
@@ -132,17 +156,17 @@
           data-holder-rendered="true">
 
         <div class="mb-3 fs-1 mb-4 mt-4" style="line-height:0%;">
-            <div style="color:rgba(255,255,255,0.5)" aria-hidden="true" id="name1">Yì-Tíng Tú (凃懿庭)</div>
-            <div id="name">Yi-Ting Tu (凃懿庭)</div>
+            <div style="color:rgba(255,255,255,0.5)" aria-hidden="true"><span id="name1">Yì-Tíng Tú (凃懿庭)</span></div>
+            <div><span id="name" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true" title="<i>yih-<small>TING</small> <small>TOO</small></i> in English,<br>/tʰu³⁵ i⁵¹ tʰiŋ³⁵/ in Mandarin.<br>Family name: Tu (凃)<br>Given name: Yi-Ting (懿庭)<br>Pronouns: he/him (他)">Yi-Ting Tu (凃懿庭)</span></div>
         </div>
             <div class="lead" id="phd">PhD student at UMD Physics</div>
           <p class="lead">
 <div class="v-slider-frame" style="color:rgba(255,255,255,0.6)">
       <ul class="v-slides">
-        <li class="v-slide" style="cursor:default;" ondblclick="langEn()">Welcome to my personal page!</li>
-        <li class="v-slide" style="cursor:default;" ondblclick="langZh()">歡迎來到我的個人網頁！</li>
-        <li class="v-slide" aria-hidden="true" style="cursor:default;" ondblclick="langPinyin()">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
-        <li class="v-slide" aria-hidden="true" style="cursor:default;" ondblclick="langPOJ()">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
+        <li class="v-slide" ondblclick="langEn()">Welcome to my personal page!</li>
+        <li class="v-slide" ondblclick="langZh()">歡迎來到我的個人網頁！</li>
+        <li class="v-slide" aria-hidden="true" ondblclick="langPinyin()">Huānyíng lái dào wǒ de gèrén wǎngyè!</li>
+        <li class="v-slide" aria-hidden="true" ondblclick="langPOJ()">Hoan-gêng lâi-kàu góa ê kò-jîn bāng-ia̍h!</li>
       </ul>
     </div>
             <script>
