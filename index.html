@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="icon" href="icon128.png" type="image/png">
-      <title>PhyDemo | Open-source Physics Demonstrators</title>
+      <title>PhyDemo | Open-source Physics Demos &amp; Apps</title>
       <meta property="og:type" content="website">
       <meta property="og:url" content="https://phydemo.app/">
       <meta name="google-site-verification" content="aQqgfKvcaiz1TWA_Sgt4cOPdYgs1ghzXMEi9iD7-uQw" />
@@ -25,12 +25,13 @@
 }
 
 .example-image {
+  float: left;
   width:64px;
   height:64px !important;
 }
 
 .example-title {
-  font-size: 12pt;
+  font-size: 10pt;
   margin-top: 0px;
   margin-bottom: 0px;
   text-overflow: ellipsis;
@@ -40,25 +41,63 @@
             padding-top: 20px; 
             padding-bottom: 20px;
         }
+.thumbnail.right-caption > img {
+  float: left;
+  margin-right: 9px;
+}
+
+.thumbnail {
+  margin-bottom: 5px;
+}
+.tool-title {
+  font-size: 16pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
       </style>
     </head>
     <body>
       <div class="container">
-        <h2>PhyDemo | Open-source Physics Demonstrators</h2>
-        <p>This website hosts some (currently two) open-source web apps for virtual physics demonstrations, and is maintained by <a href="https://yitingtu.com">Yi-Ting Tu</a>.</p>
-<a href="ray-optics/" class="thumbnail example-container">
-  <img src="icon128.png" alt="Thumbnail" class="img-rounded example-image">
-  <div class="caption">
-    <p class="example-title">Ray Optics</p>
-  </div>
-</a>
-<a href="balls-simulation/" class="thumbnail example-container">
-  <img src="ball.png" alt="Thumbnail" class="img-rounded example-image" style="opacity:0.8">
-  <div class="caption">
-    <p class="example-title">Balls Simulation</p>
-  </div>
-</a>
-<p><small>Note: ricktu288.github.io redirects here due to technical issue; Yi-Ting Tu's personal homepage has been moved to <a href="https://yitingtu.com">yitingtu.com</a>.</small></p>
+        <h1>Open-source Physics Demos &amp; Apps</h1>
+        <div style="background: rgba(0,0,0,0.1); padding: 5px; border-radius: 5px">
+          <small>⚠️ The URL <span style="color:gray">https://ricktu288.github.io/</span> redirects here due to technical issues. For the personal homepage of Yi-Ting Tu (Rick Tu), please visit <a href="https://yitingtu.com/">https://yitingtu.com/</a>.</small>
+        </div>
+        <br>
+
+        <div class="row thumbnail right-caption" style="border:none">
+          <img src="icon128.png" class="img-rounded" style="width:100px;height:100px;padding:15px">
+          <div class="caption">
+            <p class="tool-title">Ray Optics Simulation</p>
+            <p>
+              A web app for creating and simulating 2D geometric optical scenes, with a gallery of (interactive) demos.
+            </p>
+            <a href="https://phydemo.app/ray-optics/">Home</a> ·
+            <a href="https://phydemo.app/ray-optics/simulator/">Simulator</a> ·
+            <a href="https://phydemo.app/ray-optics/gallery/">Gallery</a> ·
+            <a href="https://github.com/ricktu288/ray-optics">GitHub Repo</a>
+          </div>
+        </div>
+        <div class="row thumbnail right-caption" style="border:none">
+          <img src="ball.png" class="img-rounded" style="width:100px;height:100px;padding:15px;opacity:0.8">
+          <div class="caption">
+            <p class="tool-title">Balls Simulation</p>
+            <p>
+              A simple web app simulating the collision of balls, linkage by springs, and their motion under gravity.
+            </p>
+            <a href="https://phydemo.app/balls-simulation/">Simulator</a> ·
+            <a href="https://github.com/ricktu288/balls-simulation">GitHub Repo</a>
+          </div>
+        </div>
+
+
+<h3>About PhyDemo</h3>
+<p>
+This website was originally part of Yi-Ting Tu (Rick Tu)'s personal website. However, as Ray Optics Simulation became a more and more non-personal project, and due to future consideration of new projects with some contributors, the original <span style="color:gray">ricktu288.github.io</span> was split into <a href="https://yitingtu.com/">yitingtu.com</a> and <a href="https://phydemo.app/">phydemo.app</a> in December 2022, where the former is Yi-Ting Tu's new personal website.
+</p>
+<p>
+This website, still (mainly) managed by Yi-Ting Tu, is intended for physics educational projects, including physics "demos" (instructions, videos, interactive images, etc., to show the physics directly), and physics "apps" (computer programs for users to build physical systems virtually, and to simulate them).
+However, due to the very limited spare time of the author(s), it is possible that no new projects will appear here for years.
+</p>
       </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
